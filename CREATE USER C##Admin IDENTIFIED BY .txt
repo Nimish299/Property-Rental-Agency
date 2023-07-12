@@ -1,0 +1,13 @@
+CREATE USER C##Admin IDENTIFIED BY manager DEFAULT TABLESPACE users TEMPORARY TABLESPACE temp;
+ grant connect to C##Admin;
+grant create table to C##Admin;
+alter user C##Admin quota unlimited on users;
+ grant create procedure to  C##Admin;
+grant create trigger to  C##Admin;
+set serveroutput on;
+sqlplus sys as sysdba
+abcd1234
+
+
+
+ALTER TABLE owner1 RENAME COLUMN userno To userid;
